@@ -5,11 +5,9 @@ Home: http://github.com/ropensci/rentrez
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rentrez-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides an R interface to the NCBI's 'EUtils' API,  allowing users to search databases like 'GenBank'  <https://www.ncbi.nlm.nih.gov/genbank/> and 'PubMed'  <https://www.ncbi.nlm.nih.gov/pubmed/>, process the  results of those searches and pull data into their R sessions.
-
-
 
 Current build status
 ====================
