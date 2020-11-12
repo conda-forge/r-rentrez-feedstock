@@ -1,4 +1,4 @@
-{% set version = '1.2.2' %}
+{% set version = "1.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rentrez_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rentrez/rentrez_{{ version }}.tar.gz
-  sha256: e5cb4265fd06d2ed0e11da3667ba79f7f2c8816005ba72cf5f53b8cf02dc193e
+  sha256: fb256597ebe7780e38bef9c4c2626b3feacd60c7a5a29fc6a218cf0d8d132f74
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
@@ -44,9 +44,7 @@ about:
   home: http://github.com/ropensci/rentrez
   license: MIT
   license_file: LICENSE
-  summary: Provides an R interface to the NCBI's 'EUtils' API,  allowing users to search databases
-    like 'GenBank'  <https://www.ncbi.nlm.nih.gov/genbank/> and 'PubMed'  <https://www.ncbi.nlm.nih.gov/pubmed/>,
-    process the  results of those searches and pull data into their R sessions.
+  summary: Provides an R interface to the NCBI's 'EUtils' API,  allowing users to search databases like 'GenBank'  <https://www.ncbi.nlm.nih.gov/genbank/> and 'PubMed'  <https://www.ncbi.nlm.nih.gov/pubmed/>, process the  results of those searches and pull data into their R sessions.
   license_family: MIT
 
 extra:
